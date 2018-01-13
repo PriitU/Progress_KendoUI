@@ -1,0 +1,13 @@
+{
+    "ProjectData": {
+        "authenticationModel": "Anonymous",
+        "catalogUris": [
+            "http://localhost:8810/ProjectServer/static/ProjectServerService.json"
+        ],
+        "name": "ProjectData",
+        "schemaVersion": "1.0",
+        "serviceUri": "http://localhost:8810/ProjectServer",
+        "type": "progress-data-provider",
+        "uniqueID": "acbb5976-cfa5-4f63-8fed-bd1c99f993de"
+    }
+}

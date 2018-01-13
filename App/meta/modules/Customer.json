@@ -1,0 +1,259 @@
+{
+    "description": "",
+    "label": "Customers",
+    "moduleType": "default",
+    "name": "Customer",
+    "order": 1,
+    "schemaVersion": "1.0",
+    "thumbnail": {
+        "background": "#3aa687",
+        "color": "#ffffff",
+        "icon": "fa-user"
+    },
+    "type": "module",
+    "uniqueID": "ac69182f-0946-46b6-9162-8af56da26499",
+    "children": [
+        {
+            "altRowTemplateFunction": "",
+            "altRowTemplateId": "",
+            "columns": [
+                {
+                    "encoded": true,
+                    "field": "FirstName",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "First Name"
+                },
+                {
+                    "encoded": true,
+                    "field": "LastName",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "Last Name"
+                },
+                {
+                    "encoded": true,
+                    "field": "IdCode",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "Id Code"
+                }
+            ],
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "middle": "middleSection.html",
+                "top": "topSection.html"
+            },
+            "dataProvider": "ProjectData",
+            "dataSource": "beCustomer",
+            "editOptions": {
+                "allowDelete": true,
+                "allowEdit": true,
+                "allowInsert": true,
+                "batch": true,
+                "rowButtonLabels": {
+                    "canceledit": "Cancel",
+                    "destroy": "Delete",
+                    "edit": "Edit",
+                    "update": "Update"
+                },
+                "toolbarButtonLabels": {
+                    "cancel": "Cancel",
+                    "create": "New",
+                    "save": "Save"
+                }
+            },
+            "editable": "Incell",
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "onRowCreate": "",
+                "onRowDelete": "",
+                "onRowSelect": "onRowSelect",
+                "onRowUpdate": "",
+                "showEventHandler": "onShow"
+            },
+            "extension": "view-factory.js",
+            "extensionFolderName": "Customer\\Customer",
+            "filterable": true,
+            "groupable": false,
+            "hidden": false,
+            "name": "Customer",
+            "pageSize": 10,
+            "reorderable": false,
+            "resizable": false,
+            "rowTemplateFunction": "",
+            "rowTemplateId": "",
+            "schemaVersion": "1.0",
+            "sortable": false,
+            "title": "Customers",
+            "type": "view",
+            "uniqueID": "83584a41-ef8e-431b-b298-1631668c7d65",
+            "viewType": "data-grid"
+        },
+        {
+            "childDataSource": "beViewCustomerHistory_ttHistory",
+            "childGridProperties": {
+                "altRowTemplateFunction": "",
+                "altRowTemplateId": "",
+                "columns": [
+                    {
+                        "encoded": true,
+                        "field": "CustomerHistoryId",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "CustomerHistoryId"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "CustomerId",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "CustomerId"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "FirstName",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "FirstName"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "LastName",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "LastName"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "IdCode",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "IdCode"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "Edit",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "Edit"
+                    }
+                ],
+                "editOptions": {
+                    "allowDelete": false,
+                    "allowEdit": false,
+                    "allowInsert": false,
+                    "batch": true,
+                    "rowButtonLabels": {
+                        "canceledit": "Cancel",
+                        "destroy": "Delete",
+                        "edit": "Edit",
+                        "update": "Update"
+                    },
+                    "toolbarButtonLabels": {
+                        "cancel": "Cancel changes",
+                        "create": "New",
+                        "save": "Save changes"
+                    }
+                },
+                "editable": "Inline",
+                "events": {
+                    "onDataBound": "",
+                    "onRowCreate": "",
+                    "onRowDelete": "",
+                    "onRowSelect": "onChildRowSelect",
+                    "onRowUpdate": ""
+                },
+                "filterable": false,
+                "groupable": false,
+                "pageSize": 5,
+                "reorderable": false,
+                "resizable": false,
+                "rowTemplateFunction": "",
+                "rowTemplateId": "",
+                "selectable": "Single",
+                "sortable": false,
+                "title": "Customer History"
+            },
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "bottomChild": "bottomChildSection.html",
+                "top": "topSection.html",
+                "topChild": "topChildSection.html",
+                "topParent": "topParentSection.html"
+            },
+            "dataProvider": "ProjectData",
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "extension": "view-factory.js",
+            "extensionFolderName": "Customer\\ViewCustomerHistory",
+            "hidden": false,
+            "label": "View Customer History",
+            "name": "ViewCustomerHistory",
+            "parentDataSource": "beViewCustomerHistory.ttCustomer",
+            "parentGridProperties": {
+                "altRowTemplateFunction": "",
+                "altRowTemplateId": "",
+                "columns": [
+                    {
+                        "encoded": true,
+                        "field": "IdCode",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "IdCode"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "FirstName",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "FirstName"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "LastName",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "LastName"
+                    }
+                ],
+                "events": {
+                    "onDataBound": "",
+                    "onDetailCollapse": "",
+                    "onDetailExpand": "",
+                    "onDetailInit": "",
+                    "onRowSelect": "onParentRowSelect"
+                },
+                "filterable": false,
+                "groupable": false,
+                "pageSize": 10,
+                "reorderable": false,
+                "resizable": false,
+                "rowTemplateFunction": "",
+                "rowTemplateId": "",
+                "sortable": false,
+                "title": "Customers"
+            },
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "cb37d15f-5e5e-4cde-8179-61cceafc9b74",
+            "viewType": "hierarchical-data-grid"
+        }
+    ]
+}

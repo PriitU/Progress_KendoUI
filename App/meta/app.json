@@ -1,0 +1,12 @@
+{
+    "children": [],
+    "description": "",
+    "layout": {},
+    "logo": "logo_default.png",
+    "name": "App",
+    "schemaVersion": "1.4.2",
+    "targetFramework": "AngularJS",
+    "theme": "flat",
+    "type": "app",
+    "uniqueID": "47c16a8d-67b6-4559-9017-0f57a23640ad"
+}

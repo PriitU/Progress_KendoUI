@@ -1,0 +1,60 @@
+{
+    "children": [
+        {
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "middle": "middleSection.html",
+                "top": "topSection.html"
+            },
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "login": "onLogin",
+                "showEventHandler": "onShow"
+            },
+            "extension": "view-factory.js",
+            "extensionFolderName": "Application\\login",
+            "logo": "logo_default_login.png",
+            "name": "login",
+            "passwordLabel": "Password",
+            "readonly": false,
+            "schemaVersion": "1.0",
+            "title": "<Title>",
+            "type": "view",
+            "uniqueID": "43c4da92-beb9-4a12-8f7a-47664c043f73",
+            "usernameLabel": "Username",
+            "viewType": "login"
+        },
+        {
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "top": "topSection.html"
+            },
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "extension": "view-factory.js",
+            "extensionFolderName": "Application\\landing-page",
+            "name": "landing-page",
+            "readonly": false,
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "b41bf67e-2d63-455d-a8a1-cebe9d287bfa",
+            "viewType": "landing-page"
+        }
+    ],
+    "description": "This Module contains application level pages including the landing page and authentication page",
+    "moduleType": "system",
+    "name": "Application",
+    "order": 0,
+    "schemaVersion": "1.0",
+    "thumbnail": {
+        "background": "#b2b2b2",
+        "color": "#ffffff",
+        "icon": "fa-group"
+    },
+    "type": "module",
+    "uniqueID": "b4f289ef-9167-4662-8ce4-c4c48f43332a"
+}

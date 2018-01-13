@@ -1,0 +1,885 @@
+{
+    "authenticationModel": "Anonymous",
+    "catalogUris": [
+        "http://localhost:8810/ProjectServer/static/ProjectServerService.json"
+    ],
+    "children": [
+        {
+            "clientSideProcessing": true,
+            "countFnName": "",
+            "fields": [
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractId",
+                    "name": "ContractId",
+                    "required": true,
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractNr",
+                    "name": "ContractNr",
+                    "required": true,
+                    "semanticType": "Text"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "foreignKey",
+                    "format": "",
+                    "label": "CustomerId",
+                    "name": "CustomerId",
+                    "required": true,
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "Amount",
+                    "name": "Amount",
+                    "range": {
+                        "max": 999,
+                        "min": 0
+                    },
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "AmountLeft",
+                    "name": "AmountLeft",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractStatus",
+                    "name": "ContractStatus",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": null,
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "TimeIn",
+                    "name": "TimeIn",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "defaultValue": null,
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "TimeEnded",
+                    "name": "TimeEnded",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "defaultValue": null,
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "PaymentDate",
+                    "name": "PaymentDate",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "editorType": "combo-box",
+                    "fieldType": "foreignKeyPlaceholder",
+                    "foreignKeyOptions": {
+                        "dataSource": "beCustomer",
+                        "displayField": "IdCode",
+                        "fields": "CustomerId",
+                        "parentFields": "CustomerId",
+                        "parentTable": "beCustomer.ttCustomer",
+                        "parentValueField": "CustomerId",
+                        "valueField": "CustomerId"
+                    },
+                    "format": "",
+                    "label": "beCustomer.ttCustomerFK1",
+                    "name": "beCustomer.ttCustomerFK1",
+                    "required": true,
+                    "semanticType": "Lookup"
+                }
+            ],
+            "name": "beContract",
+            "resourceName": "beContract",
+            "schemaVersion": "1.0",
+            "serviceName": "ProjectServerService",
+            "tableName": "beContract",
+            "type": "progress-data-source",
+            "uniqueID": "f2a7ab15-af7c-468b-9678-dda90c1f2323"
+        },
+        {
+            "clientSideProcessing": true,
+            "countFnName": "",
+            "fields": [
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractHistoryId",
+                    "name": "ContractHistoryId",
+                    "required": true,
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "CustomerId",
+                    "name": "CustomerId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractNr",
+                    "name": "ContractNr",
+                    "semanticType": "Text"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "Amount",
+                    "name": "Amount",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "AmountLeft",
+                    "name": "AmountLeft",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractStatus",
+                    "name": "ContractStatus",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractId",
+                    "name": "ContractId",
+                    "required": true,
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": null,
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "TimeIn",
+                    "name": "TimeIn",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "defaultValue": null,
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "TimeEnded",
+                    "name": "TimeEnded",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "numeric-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "PaymentDate",
+                    "name": "PaymentDate",
+                    "semanticType": "Number"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "Edit",
+                    "name": "Edit",
+                    "semanticType": "Text"
+                }
+            ],
+            "name": "beContractHistory",
+            "resourceName": "beContractHistory",
+            "schemaVersion": "1.0",
+            "serviceName": "ProjectServerService",
+            "tableName": "beContractHistory",
+            "type": "progress-data-source",
+            "uniqueID": "f2a7ab15-af7c-468b-9678-dda90c1f2323"
+        },
+        {
+            "clientSideProcessing": true,
+            "countFnName": "",
+            "fields": [
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "CustomerId",
+                    "name": "CustomerId",
+                    "required": true,
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "IdCode",
+                    "name": "IdCode",
+                    "required": true,
+                    "semanticType": "Text"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "FirstName",
+                    "name": "FirstName",
+                    "required": true,
+                    "semanticType": "Text"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "LastName",
+                    "name": "LastName",
+                    "required": true,
+                    "semanticType": "Text"
+                }
+            ],
+            "name": "beCustomer",
+            "resourceName": "beCustomer",
+            "schemaVersion": "1.0",
+            "serviceName": "ProjectServerService",
+            "tableName": "beCustomer",
+            "type": "progress-data-source",
+            "uniqueID": "f2a7ab15-af7c-468b-9678-dda90c1f2323"
+        },
+        {
+            "clientSideProcessing": true,
+            "countFnName": "",
+            "fields": [
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "CustomerId",
+                    "name": "CustomerId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "FirstName",
+                    "name": "FirstName",
+                    "semanticType": "Text"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "LastName",
+                    "name": "LastName",
+                    "semanticType": "Text"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "IdCode",
+                    "name": "IdCode",
+                    "semanticType": "Text"
+                }
+            ],
+            "name": "beCustomerContracts.ttCustomer",
+            "relations": [
+                {
+                    "childName": "ttContract",
+                    "parentName": "ttCustomer",
+                    "relationFields": [
+                        {
+                            "childFieldName": "CustomerId",
+                            "parentFieldName": "CustomerId"
+                        }
+                    ],
+                    "relationName": "drCustomerContracts"
+                }
+            ],
+            "resourceName": "beCustomerContracts",
+            "schemaVersion": "1.0",
+            "serviceName": "ProjectServerService",
+            "tableName": "beCustomerContracts.ttCustomer",
+            "type": "progress-data-source",
+            "uniqueID": "f2a7ab15-af7c-468b-9678-dda90c1f2323"
+        },
+        {
+            "clientSideProcessing": true,
+            "countFnName": "",
+            "fields": [
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "PaymentHistoryId",
+                    "name": "PaymentHistoryId",
+                    "required": true,
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "PaymentAmount",
+                    "name": "PaymentAmount",
+                    "required": true,
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": null,
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "PaymentTime",
+                    "name": "PaymentTime",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "foreignKey",
+                    "format": "",
+                    "label": "ContractNr",
+                    "name": "ContractNr",
+                    "semanticType": "Text"
+                },
+                {
+                    "editorType": "combo-box",
+                    "fieldType": "foreignKeyPlaceholder",
+                    "foreignKeyOptions": {
+                        "dataSource": "beContract",
+                        "displayField": "ContractNr",
+                        "fields": "ContractNr",
+                        "parentFields": "ContractNr",
+                        "parentTable": "beContract.ttContract",
+                        "parentValueField": "ContractNr",
+                        "valueField": "ContractNr"
+                    },
+                    "format": "",
+                    "label": "beContract.ttContractFK1",
+                    "name": "beContract.ttContractFK1",
+                    "semanticType": "Lookup"
+                }
+            ],
+            "name": "bePayments",
+            "resourceName": "bePayments",
+            "schemaVersion": "1.0",
+            "serviceName": "ProjectServerService",
+            "tableName": "bePayments",
+            "type": "progress-data-source",
+            "uniqueID": "f2a7ab15-af7c-468b-9678-dda90c1f2323"
+        },
+        {
+            "clientSideProcessing": true,
+            "countFnName": "",
+            "fields": [
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "CustomerId",
+                    "name": "CustomerId",
+                    "required": true,
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "IdCode",
+                    "name": "IdCode",
+                    "semanticType": "Text"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "FirstName",
+                    "name": "FirstName",
+                    "semanticType": "Text"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "LastName",
+                    "name": "LastName",
+                    "semanticType": "Text"
+                }
+            ],
+            "name": "beViewCustomerHistory.ttCustomer",
+            "relations": [
+                {
+                    "childName": "ttCustomerHistory",
+                    "parentName": "ttCustomer",
+                    "relationFields": [
+                        {
+                            "childFieldName": "CustomerId",
+                            "parentFieldName": "CustomerId"
+                        }
+                    ],
+                    "relationName": "drViewCustomerHistory"
+                }
+            ],
+            "resourceName": "beViewCustomerHistory",
+            "schemaVersion": "1.0",
+            "serviceName": "ProjectServerService",
+            "tableName": "beViewCustomerHistory.ttCustomer",
+            "type": "progress-data-source",
+            "uniqueID": "f2a7ab15-af7c-468b-9678-dda90c1f2323"
+        },
+        {
+            "clientSideProcessing": true,
+            "countFnName": "",
+            "fields": [
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractId",
+                    "name": "ContractId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": "",
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractNr",
+                    "name": "ContractNr",
+                    "semanticType": "Text"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "CustomerId",
+                    "name": "CustomerId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "Amount",
+                    "name": "Amount",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "AmountLeft",
+                    "name": "AmountLeft",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": 0,
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractStatus",
+                    "name": "ContractStatus",
+                    "semanticType": "Integer"
+                },
+                {
+                    "defaultValue": null,
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "TimeIn",
+                    "name": "TimeIn",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "defaultValue": null,
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "TimeEnded",
+                    "name": "TimeEnded",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "defaultValue": null,
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "PaymentDate",
+                    "name": "PaymentDate",
+                    "semanticType": "Datetime"
+                }
+            ],
+            "name": "beViewHistory.ttContract",
+            "relations": [
+                {
+                    "childName": "ttContractHistory",
+                    "parentName": "ttContract",
+                    "relationFields": [
+                        {
+                            "childFieldName": "ContractId",
+                            "parentFieldName": "ContractId"
+                        }
+                    ],
+                    "relationName": "drViewHistory"
+                }
+            ],
+            "resourceName": "beViewHistory",
+            "schemaVersion": "1.0",
+            "serviceName": "ProjectServerService",
+            "tableName": "beViewHistory.ttContract",
+            "type": "progress-data-source",
+            "uniqueID": "f2a7ab15-af7c-468b-9678-dda90c1f2323"
+        },
+        {
+            "clientSideProcessing": true,
+            "countFnName": "",
+            "fields": [
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractId",
+                    "name": "ContractId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractNr",
+                    "name": "ContractNr",
+                    "semanticType": "Text"
+                },
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "CustomerId",
+                    "name": "CustomerId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "Amount",
+                    "name": "Amount",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "AmountLeft",
+                    "name": "AmountLeft",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractStatus",
+                    "name": "ContractStatus",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "TimeIn",
+                    "name": "TimeIn",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "TimeEnded",
+                    "name": "TimeEnded",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "PaymentDate",
+                    "name": "PaymentDate",
+                    "semanticType": "Datetime"
+                }
+            ],
+            "name": "beCustomerContracts_ttContracts",
+            "relations": [
+                {
+                    "childName": "ttContract",
+                    "parentName": "ttCustomer",
+                    "relationFields": [
+                        {
+                            "childFieldName": "CustomerId",
+                            "parentFieldName": "CustomerId"
+                        }
+                    ],
+                    "relationName": "drCustomerContracts"
+                }
+            ],
+            "resourceName": "beCustomerContracts",
+            "schemaVersion": "1.0",
+            "serviceName": "ProjectServerService",
+            "tableName": "beCustomerContracts.ttContract",
+            "type": "progress-data-source",
+            "uniqueID": "35a7610f-9082-4b60-ae9c-fafd2415fc48"
+        },
+        {
+            "clientSideProcessing": true,
+            "countFnName": "",
+            "fields": [
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "CustomerHistoryId",
+                    "name": "CustomerHistoryId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "CustomerId",
+                    "name": "CustomerId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "FirstName",
+                    "name": "FirstName",
+                    "semanticType": "Text"
+                },
+                {
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "LastName",
+                    "name": "LastName",
+                    "semanticType": "Text"
+                },
+                {
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "IdCode",
+                    "name": "IdCode",
+                    "semanticType": "Text"
+                },
+                {
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "Edit",
+                    "name": "Edit",
+                    "semanticType": "Text"
+                }
+            ],
+            "name": "beViewCustomerHistory_ttHistory",
+            "relations": [
+                {
+                    "childName": "ttCustomerHistory",
+                    "parentName": "ttCustomer",
+                    "relationFields": [
+                        {
+                            "childFieldName": "CustomerId",
+                            "parentFieldName": "CustomerId"
+                        }
+                    ],
+                    "relationName": "drViewCustomerHistory"
+                }
+            ],
+            "resourceName": "beViewCustomerHistory",
+            "schemaVersion": "1.0",
+            "serviceName": "ProjectServerService",
+            "tableName": "beViewCustomerHistory.ttCustomerHistory",
+            "type": "progress-data-source",
+            "uniqueID": "35a7610f-9082-4b60-ae9c-fafd2415fc48"
+        },
+        {
+            "clientSideProcessing": true,
+            "countFnName": "",
+            "fields": [
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractHistoryId",
+                    "name": "ContractHistoryId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "CustomerId",
+                    "name": "CustomerId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractNr",
+                    "name": "ContractNr",
+                    "semanticType": "Text"
+                },
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "Amount",
+                    "name": "Amount",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "AmountLeft",
+                    "name": "AmountLeft",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractStatus",
+                    "name": "ContractStatus",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "integer-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractId",
+                    "name": "ContractId",
+                    "semanticType": "Integer"
+                },
+                {
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "TimeIn",
+                    "name": "TimeIn",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "TimeEnded",
+                    "name": "TimeEnded",
+                    "semanticType": "Datetime"
+                },
+                {
+                    "editorType": "numeric-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "PaymentDate",
+                    "name": "PaymentDate",
+                    "semanticType": "Number"
+                },
+                {
+                    "editorType": "text-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "Edit",
+                    "name": "Edit",
+                    "semanticType": "Text"
+                }
+            ],
+            "name": "beViewHistory_ttHistory",
+            "relations": [
+                {
+                    "childName": "ttContractHistory",
+                    "parentName": "ttContract",
+                    "relationFields": [
+                        {
+                            "childFieldName": "ContractId",
+                            "parentFieldName": "ContractId"
+                        }
+                    ],
+                    "relationName": "drViewHistory"
+                }
+            ],
+            "resourceName": "beViewHistory",
+            "schemaVersion": "1.0",
+            "serviceName": "ProjectServerService",
+            "tableName": "beViewHistory.ttContractHistory",
+            "type": "progress-data-source",
+            "uniqueID": "35a7610f-9082-4b60-ae9c-fafd2415fc48"
+        }
+    ],
+    "name": "ProjectData",
+    "schemaVersion": "1.0",
+    "serviceUri": "http://localhost:8810/ProjectServer",
+    "type": "progress-data-provider",
+    "uniqueID": "42174be2-a2ab-4f61-b53a-0dc801db0748"
+}

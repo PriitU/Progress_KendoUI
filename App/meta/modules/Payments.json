@@ -1,0 +1,186 @@
+{
+    "description": "",
+    "label": "Payments",
+    "moduleType": "default",
+    "name": "Payments",
+    "order": 3,
+    "schemaVersion": "1.0",
+    "thumbnail": {
+        "background": "#1d75eb",
+        "color": "#ffffff",
+        "icon": "fa-credit-card"
+    },
+    "type": "module",
+    "uniqueID": "4b69b201-7592-4690-a841-ce67976cf408",
+    "children": [
+        {
+            "altRowTemplateFunction": "",
+            "altRowTemplateId": "",
+            "columns": [
+                {
+                    "encoded": true,
+                    "field": "PaymentAmount",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "PaymentAmount"
+                },
+                {
+                    "encoded": true,
+                    "field": "PaymentTime",
+                    "filterable": true,
+                    "format": "{0:g}",
+                    "sortable": true,
+                    "title": "PaymentTime"
+                },
+                {
+                    "encoded": true,
+                    "field": "ContractNr",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "ContractNr"
+                }
+            ],
+            "confirmRemove": true,
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "middle": "middleSection.html",
+                "top": "topSection.html"
+            },
+            "dataProvider": "ProjectData",
+            "dataSource": "bePayments",
+            "editMode": "Read-Only to Edit",
+            "editTitle": "Edit",
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "onDataBound": "",
+                "onRowSelect": "onRowSelect",
+                "showEventHandler": "onShow"
+            },
+            "extension": "view-factory.js",
+            "extensionFolderName": "Payments\\NewPayment",
+            "filterable": false,
+            "groupable": false,
+            "groups": [
+                {
+                    "fields": [
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "downArrowText": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "format": "",
+                                "id": "ctl23",
+                                "model": "formModel.PaymentAmount",
+                                "placeholder": "",
+                                "schemaVersion": "1.0",
+                                "spinners": false,
+                                "step": 1,
+                                "title": "PaymentAmount",
+                                "type": "integer-text-box",
+                                "uniqueID": "7a4306fa-55e6-44e7-ad2f-1679a7f4f2e7",
+                                "upArrowText": "",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "format": "",
+                            "id": "ctl22",
+                            "itemType": "field",
+                            "label": "PaymentAmount",
+                            "name": "PaymentAmount"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "format": "{0:g}",
+                                "id": "ctl25",
+                                "interval": 30,
+                                "maxDate": "2099-12-30T22:00:00.000Z",
+                                "minDate": "1899-12-31T22:00:00.000Z",
+                                "model": "formModel.PaymentTime",
+                                "schemaVersion": "1.0",
+                                "title": "PaymentTime",
+                                "type": "date-time-picker",
+                                "uniqueID": "3dfba0c1-3a08-434c-93b9-95f01ec44455",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "format": "{0:g}",
+                            "id": "ctl24",
+                            "itemType": "field",
+                            "label": "PaymentTime",
+                            "name": "PaymentTime"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotationRefs": {
+                                    "dataSourceName": {
+                                        "kind": "dataSourceName"
+                                    }
+                                },
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "dataSourceName": "beContract.ttContractFK1DS",
+                                "events": {
+                                    "onChange": "",
+                                    "onFilter": "",
+                                    "onSelect": ""
+                                },
+                                "filter": "None",
+                                "format": "",
+                                "id": "ctl29",
+                                "model": "fkeyModels['beContract.ttContractFK1DSModel']",
+                                "schemaVersion": "1.0",
+                                "textField": "ContractNr",
+                                "title": "beContract.ttContractFK1",
+                                "type": "combo-box",
+                                "uniqueID": "2692b338-f30c-4de1-9226-63da931aef37",
+                                "validation": {
+                                    "required": false
+                                },
+                                "valueField": "ContractNr",
+                                "valuePrimitive": false
+                            },
+                            "format": "",
+                            "id": "ctl28",
+                            "itemType": "field",
+                            "label": "Contract Nr",
+                            "name": "beContract.ttContractFK1"
+                        }
+                    ],
+                    "id": "ac301338-012f-437c-8688-e87c0f19dba2",
+                    "name": "New Group"
+                }
+            ],
+            "hidden": false,
+            "label": "Add new payment",
+            "name": "NewPayment",
+            "newTitle": "New",
+            "pageSize": 10,
+            "reorderable": false,
+            "resizable": false,
+            "rowTemplateFunction": "",
+            "rowTemplateId": "",
+            "schemaVersion": "1.0",
+            "sortable": false,
+            "title": "New Payment",
+            "type": "view",
+            "uniqueID": "8e6907b4-887f-4752-af0d-fcdb8293455a",
+            "viewType": "data-grid-form"
+        }
+    ]
+}

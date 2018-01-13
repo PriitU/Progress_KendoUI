@@ -1,0 +1,741 @@
+{
+    "children": [
+        {
+            "altRowTemplateFunction": "",
+            "altRowTemplateId": "",
+            "columns": [
+                {
+                    "encoded": true,
+                    "field": "ContractNr",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "Contract Nr"
+                },
+                {
+                    "encoded": true,
+                    "field": "beCustomer.ttCustomerFK1",
+                    "filterable": true,
+                    "sortable": true,
+                    "title": "Customer"
+                },
+                {
+                    "encoded": true,
+                    "field": "Amount",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "Amount"
+                },
+                {
+                    "encoded": true,
+                    "field": "AmountLeft",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "Amount Left"
+                },
+                {
+                    "encoded": true,
+                    "field": "ContractStatus",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "Contract Status"
+                },
+                {
+                    "encoded": true,
+                    "field": "TimeIn",
+                    "filterable": true,
+                    "format": "{0:g}",
+                    "sortable": true,
+                    "title": "Time In"
+                },
+                {
+                    "encoded": true,
+                    "field": "TimeEnded",
+                    "filterable": true,
+                    "format": "{0:g}",
+                    "sortable": true,
+                    "title": "Time Ended"
+                },
+                {
+                    "encoded": true,
+                    "field": "PaymentDate",
+                    "filterable": true,
+                    "format": "{0:g}",
+                    "sortable": true,
+                    "title": "Payment Date"
+                }
+            ],
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "middle": "middleSection.html",
+                "top": "topSection.html"
+            },
+            "dataProvider": "ProjectData",
+            "dataSource": "beContract",
+            "editOptions": {
+                "allowDelete": true,
+                "allowEdit": true,
+                "allowInsert": false,
+                "batch": true,
+                "rowButtonLabels": {
+                    "canceledit": "Cancel",
+                    "destroy": "Delete",
+                    "edit": "Edit",
+                    "update": "Update"
+                },
+                "toolbarButtonLabels": {
+                    "cancel": "Cancel",
+                    "create": "New",
+                    "save": "Save"
+                }
+            },
+            "editable": "Incell",
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "onRowCreate": "",
+                "onRowDelete": "",
+                "onRowSelect": "onRowSelect",
+                "onRowUpdate": "",
+                "showEventHandler": "onShow"
+            },
+            "extension": "view-factory.js",
+            "extensionFolderName": "Contracts\\Contracts",
+            "filterable": true,
+            "groupable": true,
+            "hidden": false,
+            "label": "View/Edit Contracts",
+            "name": "Contracts",
+            "pageSize": 10,
+            "reorderable": true,
+            "resizable": true,
+            "rowTemplateFunction": "",
+            "rowTemplateId": "",
+            "schemaVersion": "1.0",
+            "sortable": true,
+            "title": "View/Edit Contracts",
+            "type": "view",
+            "uniqueID": "550c2c29-3f08-47a1-9a79-2488600b45b3",
+            "viewType": "data-grid"
+        },
+        {
+            "altRowTemplateFunction": "",
+            "altRowTemplateId": "",
+            "columns": [
+                {
+                    "encoded": true,
+                    "field": "ContractNr",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "Contract Nr"
+                },
+                {
+                    "encoded": true,
+                    "field": "ContractStatus",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "Contract Status"
+                }
+            ],
+            "confirmRemove": true,
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "middle": "middleSection.html",
+                "top": "topSection.html"
+            },
+            "dataProvider": "ProjectData",
+            "dataSource": "beContract",
+            "editMode": "Read-Only to Edit",
+            "editTitle": "Edit",
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "onDataBound": "",
+                "onRowSelect": "onRowSelect",
+                "showEventHandler": "onShow"
+            },
+            "extension": "view-factory.js",
+            "extensionFolderName": "Contracts\\Contract",
+            "filterable": false,
+            "groupable": false,
+            "groups": [
+                {
+                    "fields": [
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "debounce": 0,
+                                "defaultValue": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "format": "",
+                                "id": "ctl3",
+                                "model": "formModel.ContractNr",
+                                "placeholder": "",
+                                "schemaVersion": "1.0",
+                                "title": "Contract Nr",
+                                "type": "text-box",
+                                "uniqueID": "456a9d1b-78d6-4d30-878b-d1738513658e",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "format": "",
+                            "id": "ctl2",
+                            "itemType": "field",
+                            "label": "Contract Nr",
+                            "name": "ContractNr"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotationRefs": {
+                                    "dataSourceName": {
+                                        "kind": "dataSourceName"
+                                    }
+                                },
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "dataSourceName": "beCustomer.ttCustomerFK1DS",
+                                "events": {
+                                    "onChange": "",
+                                    "onFilter": "",
+                                    "onSelect": ""
+                                },
+                                "filter": "None",
+                                "format": "",
+                                "id": "ctl19",
+                                "model": "fkeyModels['beCustomer.ttCustomerFK1DSModel']",
+                                "schemaVersion": "1.0",
+                                "textField": "IdCode",
+                                "title": "Customer",
+                                "type": "combo-box",
+                                "uniqueID": "0625bac1-9e95-44aa-8f5f-083ef54b3207",
+                                "validation": {
+                                    "required": false
+                                },
+                                "valueField": "CustomerId",
+                                "valuePrimitive": false
+                            },
+                            "format": "",
+                            "id": "ctl18",
+                            "itemType": "field",
+                            "label": "Customer",
+                            "name": "beCustomer.ttCustomerFK1"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "deicmals": 0,
+                                "downArrowText": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "format": "{0:c}",
+                                "id": "ctl7",
+                                "model": "formModel.Amount",
+                                "placeholder": "Amount",
+                                "schemaVersion": "1.0",
+                                "spinners": false,
+                                "title": "Amount",
+                                "type": "currency-text-box",
+                                "uniqueID": "fa0828df-ee97-4bde-8bee-f70c3d9179d1",
+                                "upArrowText": "",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "format": "{0:c}",
+                            "id": "ctl6",
+                            "itemType": "field",
+                            "label": "Amount",
+                            "name": "Amount"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "format": "{0:g}",
+                                "id": "ctl13",
+                                "interval": 30,
+                                "maxDate": "2099-12-30T22:00:00.000Z",
+                                "minDate": "1899-12-31T22:00:00.000Z",
+                                "model": "formModel.TimeIn",
+                                "schemaVersion": "1.0",
+                                "title": "Time In",
+                                "type": "date-time-picker",
+                                "uniqueID": "80efdd26-be28-4d4a-8f37-fd911ee24e6e",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "format": "{0:g}",
+                            "id": "ctl12",
+                            "itemType": "field",
+                            "label": "Time In",
+                            "name": "TimeIn"
+                        }
+                    ],
+                    "id": "a3fe62ec-ea10-4274-a2a9-af19c75e9c11",
+                    "name": "New Group"
+                }
+            ],
+            "hidden": false,
+            "label": "Add Contract",
+            "name": "Contract",
+            "newTitle": "New",
+            "pageSize": 20,
+            "reorderable": false,
+            "resizable": false,
+            "rowTemplateFunction": "",
+            "rowTemplateId": "",
+            "schemaVersion": "1.0",
+            "sortable": false,
+            "title": "Add Contract",
+            "type": "view",
+            "uniqueID": "2085c89e-4e4b-489b-9e7e-5e602b71eff4",
+            "viewType": "data-grid-form"
+        },
+        {
+            "childDataSource": "beCustomerContracts_ttContracts",
+            "childGridProperties": {
+                "altRowTemplateFunction": "",
+                "altRowTemplateId": "",
+                "columns": [
+                    {
+                        "encoded": true,
+                        "field": "ContractId",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "ContractId"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "ContractNr",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "ContractNr"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "CustomerId",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "CustomerId"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "Amount",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "Amount"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "AmountLeft",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "AmountLeft"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "ContractStatus",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "ContractStatus"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "TimeIn",
+                        "filterable": true,
+                        "format": "{0:g}",
+                        "sortable": true,
+                        "title": "TimeIn"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "TimeEnded",
+                        "filterable": true,
+                        "format": "{0:g}",
+                        "sortable": true,
+                        "title": "TimeEnded"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "PaymentDate",
+                        "filterable": true,
+                        "format": "{0:g}",
+                        "sortable": true,
+                        "title": "PaymentDate"
+                    }
+                ],
+                "editOptions": {
+                    "allowDelete": false,
+                    "allowEdit": false,
+                    "allowInsert": false,
+                    "batch": true,
+                    "rowButtonLabels": {
+                        "canceledit": "Cancel",
+                        "destroy": "Delete",
+                        "edit": "Edit",
+                        "update": "Update"
+                    },
+                    "toolbarButtonLabels": {
+                        "cancel": "Cancel",
+                        "create": "New",
+                        "save": "Save"
+                    }
+                },
+                "editable": "Popup",
+                "events": {
+                    "onDataBound": "",
+                    "onRowCreate": "",
+                    "onRowDelete": "",
+                    "onRowSelect": "onChildRowSelect",
+                    "onRowUpdate": ""
+                },
+                "filterable": false,
+                "groupable": false,
+                "pageSize": 10,
+                "reorderable": false,
+                "resizable": false,
+                "rowTemplateFunction": "",
+                "rowTemplateId": "",
+                "selectable": "Single",
+                "sortable": false,
+                "title": "Contracts"
+            },
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "middle": "middleSection.html",
+                "top": "topSection.html",
+                "topChild": "topChildSection.html",
+                "topParent": "topParentSection.html"
+            },
+            "dataProvider": "ProjectData",
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "extension": "view-factory.js",
+            "extensionFolderName": "Contracts\\CustomerContracts",
+            "hidden": false,
+            "label": "Customer Contracts",
+            "name": "CustomerContracts",
+            "parentDataSource": "beCustomerContracts.ttCustomer",
+            "parentGridProperties": {
+                "altRowTemplateFunction": "",
+                "altRowTemplateId": "",
+                "columns": [
+                    {
+                        "encoded": true,
+                        "field": "FirstName",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "First Name"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "LastName",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "Last Name"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "IdCode",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "Id Code"
+                    }
+                ],
+                "events": {
+                    "onDataBound": "",
+                    "onRowSelect": "onParentRowSelect"
+                },
+                "filterable": false,
+                "groupable": false,
+                "pageSize": 10,
+                "reorderable": false,
+                "resizable": false,
+                "rowTemplateFunction": "",
+                "rowTemplateId": "",
+                "sortable": false,
+                "title": "Customers"
+            },
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "e441aa7e-2258-443c-97bc-58eeae1daa40",
+            "viewType": "stacked-data-grids"
+        },
+        {
+            "childDataSource": "beViewHistory_ttHistory",
+            "childGridProperties": {
+                "altRowTemplateFunction": "",
+                "altRowTemplateId": "",
+                "columns": [
+                    {
+                        "encoded": true,
+                        "field": "ContractHistoryId",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "ContractHistoryId"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "CustomerId",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "CustomerId"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "ContractNr",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "ContractNr"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "Amount",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "Amount"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "AmountLeft",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "AmountLeft"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "ContractStatus",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "ContractStatus"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "ContractId",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "ContractId"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "TimeIn",
+                        "filterable": true,
+                        "format": "{0:g}",
+                        "sortable": true,
+                        "title": "TimeIn"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "TimeEnded",
+                        "filterable": true,
+                        "format": "{0:g}",
+                        "sortable": true,
+                        "title": "TimeEnded"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "PaymentDate",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "PaymentDate"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "Edit",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "Edit"
+                    }
+                ],
+                "editOptions": {
+                    "allowDelete": false,
+                    "allowEdit": false,
+                    "allowInsert": false,
+                    "batch": true,
+                    "rowButtonLabels": {
+                        "canceledit": "Cancel",
+                        "destroy": "Delete",
+                        "edit": "Edit",
+                        "update": "Update"
+                    },
+                    "toolbarButtonLabels": {
+                        "cancel": "Cancel changes",
+                        "create": "New",
+                        "save": "Save changes"
+                    }
+                },
+                "editable": "ReadOnly",
+                "events": {
+                    "onDataBound": "",
+                    "onRowCreate": "",
+                    "onRowDelete": "",
+                    "onRowSelect": "onChildRowSelect",
+                    "onRowUpdate": ""
+                },
+                "filterable": false,
+                "groupable": false,
+                "pageSize": 5,
+                "reorderable": false,
+                "resizable": false,
+                "rowTemplateFunction": "",
+                "rowTemplateId": "",
+                "selectable": "Single",
+                "sortable": false,
+                "title": "History"
+            },
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "bottomChild": "bottomChildSection.html",
+                "top": "topSection.html",
+                "topChild": "topChildSection.html",
+                "topParent": "topParentSection.html"
+            },
+            "dataProvider": "ProjectData",
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "extension": "view-factory.js",
+            "extensionFolderName": "Contracts\\ContractsHistory",
+            "hidden": false,
+            "name": "ContractsHistory",
+            "parentDataSource": "beViewHistory.ttContract",
+            "parentGridProperties": {
+                "altRowTemplateFunction": "",
+                "altRowTemplateId": "",
+                "columns": [
+                    {
+                        "encoded": true,
+                        "field": "ContractNr",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "Contract Nr"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "Amount",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "Amount"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "AmountLeft",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "Amount Left"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "ContractStatus",
+                        "filterable": true,
+                        "format": "",
+                        "sortable": true,
+                        "title": "Contract Status"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "TimeIn",
+                        "filterable": true,
+                        "format": "{0:g}",
+                        "sortable": true,
+                        "title": "Time In"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "TimeEnded",
+                        "filterable": true,
+                        "format": "{0:g}",
+                        "sortable": true,
+                        "title": "Time Ended"
+                    },
+                    {
+                        "encoded": true,
+                        "field": "PaymentDate",
+                        "filterable": true,
+                        "format": "{0:g}",
+                        "sortable": true,
+                        "title": "Payment Date"
+                    }
+                ],
+                "events": {
+                    "onDataBound": "",
+                    "onDetailCollapse": "",
+                    "onDetailExpand": "",
+                    "onDetailInit": "",
+                    "onRowSelect": "onParentRowSelect"
+                },
+                "filterable": false,
+                "groupable": false,
+                "pageSize": 10,
+                "reorderable": false,
+                "resizable": false,
+                "rowTemplateFunction": "",
+                "rowTemplateId": "",
+                "sortable": false,
+                "title": "Contracts"
+            },
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "f1019bf4-ff87-40bc-922b-c692825fe24a",
+            "viewType": "hierarchical-data-grid"
+        }
+    ],
+    "description": "",
+    "label": "Contracts",
+    "moduleType": "default",
+    "name": "Contracts",
+    "order": 2,
+    "schemaVersion": "1.0",
+    "thumbnail": {
+        "background": "#c40000",
+        "color": "#ffffff",
+        "icon": "fa-book"
+    },
+    "type": "module",
+    "uniqueID": "40275839-b1fd-44db-bc8b-5ca9591dee01"
+}

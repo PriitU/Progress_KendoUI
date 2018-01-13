@@ -1,0 +1,133 @@
+<!--
+Auto-generated
+Do not edit!!!
+-->
+<div class="data-grid-form">
+    <div class="row">
+        <div class="col-lg-12" ng-include="vm.$model.customSections.top">
+        </div>
+    </div>
+    <div class="row data-grid-form-header">
+        <div class="col-xs-8">
+            <h2 ng-if="!vm.$updateInProcess && !vm.$insertInProcess" ng-bind-html="vm.$model.title"></h2>
+            <h2 ng-if="vm.$updateInProcess" ng-bind-html="vm.$model.editTitle"></h2>
+            <h2 ng-if="vm.$insertInProcess" ng-bind-html="vm.$model.newTitle"></h2>
+        </div>
+        <div class="col-xs-4 text-right" ng-if="vm.$model.editMode === 'Read-Only to Edit'">
+            <a ng-click="vm._$insert()" ng-if="!vm.$insertInProcess && !vm.$updateInProcess" class="k-button k-button-icontext">
+                <span class="k-icon k-i-plus"></span> New
+            </a>
+            <a ng-click="vm._$edit()" ng-if="!vm.$insertInProcess && !vm.$updateInProcess" class="k-button k-button-icontext" ng-class="{'kuib-disabled': !vm.$selectedId }">
+                <span class="k-icon k-i-edit"></span> Edit
+            </a>
+            <a ng-click="vm._$save()" ng-if="vm.$insertInProcess || vm.$updateInProcess" class="k-button k-button-icontext k-primary k-grid-update" ng-class="{'kuib-disabled': !vm.$viewModels.formModel.dirty }">
+                <span class="k-icon k-i-save"></span> Save
+            </a>
+            <a ng-click="vm._$cancel()" ng-if="vm.$insertInProcess || vm.$updateInProcess" class="k-button k-button-icontext k-grid-cancel">
+                <span class="k-icon k-i-cancel"></span> Cancel
+            </a>
+            <a ng-click="vm._$delete()" ng-if="vm.$updateInProcess" class="k-button k-button-icontext k-grid-delete">
+                <span class="k-icon k-i-delete"></span> Delete
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12" ng-include="vm.$model.customSections.middle">
+        </div>
+    </div>
+    <hr class="k-separator">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="overlay k-overlay ng-scope" ng-if="vm.$updateInProcess || vm.$insertInProcess"></div>
+            <grid data-options="vm.$model.gridOptions" data-model="vm.$gridModel" data-widget="vm.$grid" data-events="vm.$model.events"></grid>
+        </div>
+        <div class="col-md-8">
+            <div class="data-form-wrapper k-widget">
+                <data-data-form data-model="vm.$model.formOptions" data-validator="vm.$validator" data-update-in-process="vm.$updateInProcess" data-insert-in-process="vm.$insertInProcess" data-selected="vm.$viewModels.formModel">
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+
+                            <div class="row" ng-if="!vm.$updateInProcess && !vm.$insertInProcess">
+                                <div class="col-md-5"> PaymentAmount </div>
+
+                                <div class="col-md-7"> {{vm.$viewModels.formModel.PaymentAmount | formatValue: '' }}</div>
+
+                            </div>
+                            <div class="row" ng-if="vm.$updateInProcess || vm.$insertInProcess">
+                                <div class="col-md-5">
+                                    <label for="ctl22">PaymentAmount</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <integer-text-box data-id="ctl23" data-widget="vm.$components.ctl23.widget" data-title="PaymentAmount" data-options="vm.$components.ctl23.options" data-model="vm.$viewModels.formModel.PaymentAmount" data-events="vm.$components.ctl23.events" data-validation="vm.$components.ctl23.validation">
+                                    </integer-text-box>
+                                </div>
+                            </div>
+
+                            <div class="row" ng-if="!vm.$updateInProcess && !vm.$insertInProcess">
+                                <div class="col-md-5"> PaymentTime </div>
+
+                                <div class="col-md-7"> {{vm.$viewModels.formModel.PaymentTime | formatValue: '{0:g}' }}</div>
+
+                            </div>
+                            <div class="row" ng-if="vm.$updateInProcess || vm.$insertInProcess">
+                                <div class="col-md-5">
+                                    <label for="ctl24">PaymentTime</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <date-time-picker data-id="ctl25" data-widget="vm.$components.ctl25.widget" data-title="PaymentTime" data-model="vm.$viewModels.formModel.PaymentTime" data-options="vm.$components.ctl25.options" data-events="vm.$components.ctl25.events" data-validation="vm.$components.ctl25.validation">
+                                    </date-time-picker>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="row" ng-if="!vm.$updateInProcess && !vm.$insertInProcess">
+                                <div class="col-md-5"> Contract Nr </div>
+
+                                <div class="col-md-7"> {{vm.$viewModels.fkeyModels['beContract.ttContractFK1DSModel'].ContractNr | formatValue: '' }}</div>
+
+                            </div>
+                            <div class="row" ng-if="vm.$updateInProcess || vm.$insertInProcess">
+                                <div class="col-md-5">
+                                    <label for="ctl28"> Contract Nr</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <combo-box data-id="ctl29" data-widget="vm.$components.ctl29.widget" data-title="beContract.ttContractFK1" data-model="vm.$viewModels.fkeyModels['beContract.ttContractFK1DSModel']" data-options="vm.$components.ctl29.options" data-events="vm.$components.ctl29.events"
+                                        data-validation="vm.$components.ctl29.validation">
+                                        </combo-box>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </data-data-form>
+
+                <div class="row" ng-if="vm.$model.editMode === 'Read-Only to Edit'">
+                    <div class="col-xs-12 data-form-commands">
+                        <hr class="k-separator">
+                        <a ng-click="vm._$edit()" ng-if="!vm.$updateInProcess && !vm.$insertInProcess" class="k-button k-button-icontext" ng-class="{'kuib-disabled': !vm.$selectedId }">
+                            <span class="k-icon k-i-edit"></span> Edit
+                        </a>
+                        <a ng-click="vm._$save()" ng-if="vm.$updateInProcess || vm.$insertInProcess" class="k-button k-button-icontext k-primary k-grid-update" ng-class="{'kuib-disabled': !vm.$viewModels.formModel.dirty }">
+                            <span class="k-icon k-i-save"></span> Save
+                        </a>
+                        <a ng-click="vm._$cancel()" ng-if="vm.$updateInProcess || vm.$insertInProcess" class="k-button k-button-icontext k-grid-cancel">
+                            <span class="k-icon k-i-cancel"></span> Cancel
+                        </a>
+                        <a ng-click="vm._$delete()" ng-if="vm.$updateInProcess" class="k-button k-button-icontext k-grid-delete">
+                            <span class="k-icon k-i-delete"></span> Delete
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12" ng-include="vm.$model.customSections.bottom">
+        </div>
+    </div>
+</div>
