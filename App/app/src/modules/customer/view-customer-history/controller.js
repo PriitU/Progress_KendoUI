@@ -108,12 +108,20 @@ class BaseController {
                 },
 
                 editable: 'inline',
-                filterable: false,
+                filterable: true,
                 groupable: false,
                 resizable: false,
                 reorderable: false,
                 sortable: false,
                 columns: [{
+                        "encoded": true,
+                        "field": "HistoryTime",
+                        "filterable": true,
+                        "format": "{0:g}",
+                        "sortable": true,
+                        "title": "HistoryTime"
+                    },
+                    {
                         "encoded": true,
                         "field": "CustomerHistoryId",
                         "filterable": true,

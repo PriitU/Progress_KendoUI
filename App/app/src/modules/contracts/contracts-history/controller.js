@@ -118,26 +118,18 @@ class BaseController {
                 },
 
                 editable: 'readonly',
-                filterable: false,
+                filterable: true,
                 groupable: false,
                 resizable: false,
                 reorderable: false,
                 sortable: false,
                 columns: [{
                         "encoded": true,
-                        "field": "ContractHistoryId",
+                        "field": "ContractHistoryTime",
                         "filterable": true,
-                        "format": "",
+                        "format": "{0:g}",
                         "sortable": true,
-                        "title": "ContractHistoryId"
-                    },
-                    {
-                        "encoded": true,
-                        "field": "CustomerId",
-                        "filterable": true,
-                        "format": "",
-                        "sortable": true,
-                        "title": "CustomerId"
+                        "title": "Time"
                     },
                     {
                         "encoded": true,
@@ -145,7 +137,7 @@ class BaseController {
                         "filterable": true,
                         "format": "",
                         "sortable": true,
-                        "title": "ContractNr"
+                        "title": "Contract Nr"
                     },
                     {
                         "encoded": true,
@@ -161,7 +153,7 @@ class BaseController {
                         "filterable": true,
                         "format": "",
                         "sortable": true,
-                        "title": "AmountLeft"
+                        "title": "Amount Left"
                     },
                     {
                         "encoded": true,
@@ -169,15 +161,7 @@ class BaseController {
                         "filterable": true,
                         "format": "",
                         "sortable": true,
-                        "title": "ContractStatus"
-                    },
-                    {
-                        "encoded": true,
-                        "field": "ContractId",
-                        "filterable": true,
-                        "format": "",
-                        "sortable": true,
-                        "title": "ContractId"
+                        "title": "Contract Status"
                     },
                     {
                         "encoded": true,
@@ -185,7 +169,7 @@ class BaseController {
                         "filterable": true,
                         "format": "{0:g}",
                         "sortable": true,
-                        "title": "TimeIn"
+                        "title": "Time In"
                     },
                     {
                         "encoded": true,
@@ -193,7 +177,7 @@ class BaseController {
                         "filterable": true,
                         "format": "{0:g}",
                         "sortable": true,
-                        "title": "TimeEnded"
+                        "title": "Time Ended"
                     },
                     {
                         "encoded": true,
@@ -201,7 +185,7 @@ class BaseController {
                         "filterable": true,
                         "format": "",
                         "sortable": true,
-                        "title": "PaymentDate"
+                        "title": "Payment Date"
                     },
                     {
                         "encoded": true,

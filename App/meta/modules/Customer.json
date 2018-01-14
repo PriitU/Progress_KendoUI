@@ -102,6 +102,14 @@
                 "columns": [
                     {
                         "encoded": true,
+                        "field": "HistoryTime",
+                        "filterable": true,
+                        "format": "{0:g}",
+                        "sortable": true,
+                        "title": "HistoryTime"
+                    },
+                    {
+                        "encoded": true,
                         "field": "CustomerHistoryId",
                         "filterable": true,
                         "format": "",
@@ -174,7 +182,7 @@
                     "onRowSelect": "onChildRowSelect",
                     "onRowUpdate": ""
                 },
-                "filterable": false,
+                "filterable": true,
                 "groupable": false,
                 "pageSize": 5,
                 "reorderable": false,

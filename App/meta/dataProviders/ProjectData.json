@@ -71,7 +71,7 @@
                 },
                 {
                     "defaultValue": null,
-                    "editorType": "date-time-input",
+                    "editorType": "calendar",
                     "fieldType": "field",
                     "format": "",
                     "label": "TimeIn",
@@ -128,17 +128,14 @@
             "countFnName": "",
             "fields": [
                 {
-                    "defaultValue": 0,
                     "editorType": "integer-input",
                     "fieldType": "field",
                     "format": "",
                     "label": "ContractHistoryId",
                     "name": "ContractHistoryId",
-                    "required": true,
                     "semanticType": "Integer"
                 },
                 {
-                    "defaultValue": 0,
                     "editorType": "integer-input",
                     "fieldType": "field",
                     "format": "",
@@ -147,7 +144,6 @@
                     "semanticType": "Integer"
                 },
                 {
-                    "defaultValue": "",
                     "editorType": "text-input",
                     "fieldType": "field",
                     "format": "",
@@ -156,7 +152,6 @@
                     "semanticType": "Text"
                 },
                 {
-                    "defaultValue": 0,
                     "editorType": "integer-input",
                     "fieldType": "field",
                     "format": "",
@@ -165,7 +160,6 @@
                     "semanticType": "Integer"
                 },
                 {
-                    "defaultValue": 0,
                     "editorType": "integer-input",
                     "fieldType": "field",
                     "format": "",
@@ -174,7 +168,6 @@
                     "semanticType": "Integer"
                 },
                 {
-                    "defaultValue": 0,
                     "editorType": "integer-input",
                     "fieldType": "field",
                     "format": "",
@@ -183,17 +176,14 @@
                     "semanticType": "Integer"
                 },
                 {
-                    "defaultValue": 0,
                     "editorType": "integer-input",
                     "fieldType": "field",
                     "format": "",
                     "label": "ContractId",
                     "name": "ContractId",
-                    "required": true,
                     "semanticType": "Integer"
                 },
                 {
-                    "defaultValue": null,
                     "editorType": "date-time-input",
                     "fieldType": "field",
                     "format": "",
@@ -202,7 +192,6 @@
                     "semanticType": "Datetime"
                 },
                 {
-                    "defaultValue": null,
                     "editorType": "date-time-input",
                     "fieldType": "field",
                     "format": "",
@@ -211,7 +200,6 @@
                     "semanticType": "Datetime"
                 },
                 {
-                    "defaultValue": 0,
                     "editorType": "numeric-input",
                     "fieldType": "field",
                     "format": "",
@@ -220,7 +208,14 @@
                     "semanticType": "Number"
                 },
                 {
-                    "defaultValue": "",
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractHistoryTime",
+                    "name": "ContractHistoryTime",
+                    "semanticType": "Datetime"
+                },
+                {
                     "editorType": "text-input",
                     "fieldType": "field",
                     "format": "",
@@ -230,6 +225,19 @@
                 }
             ],
             "name": "beContractHistory",
+            "relations": [
+                {
+                    "childName": "ttContractHistory",
+                    "parentName": "ttContract",
+                    "relationFields": [
+                        {
+                            "childFieldName": "ContractId",
+                            "parentFieldName": "ContractId"
+                        }
+                    ],
+                    "relationName": "drViewHistory"
+                }
+            ],
             "resourceName": "beContractHistory",
             "schemaVersion": "1.0",
             "serviceName": "ProjectServerService",
@@ -378,7 +386,7 @@
                 },
                 {
                     "defaultValue": null,
-                    "editorType": "date-time-input",
+                    "editorType": "calendar",
                     "fieldType": "field",
                     "format": "",
                     "label": "PaymentTime",
@@ -739,6 +747,14 @@
                     "label": "Edit",
                     "name": "Edit",
                     "semanticType": "Text"
+                },
+                {
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "HistoryTime",
+                    "name": "HistoryTime",
+                    "semanticType": "Datetime"
                 }
             ],
             "name": "beViewCustomerHistory_ttHistory",
@@ -845,6 +861,14 @@
                     "label": "PaymentDate",
                     "name": "PaymentDate",
                     "semanticType": "Number"
+                },
+                {
+                    "editorType": "date-time-input",
+                    "fieldType": "field",
+                    "format": "",
+                    "label": "ContractHistoryTime",
+                    "name": "ContractHistoryTime",
+                    "semanticType": "Datetime"
                 },
                 {
                     "editorType": "text-input",

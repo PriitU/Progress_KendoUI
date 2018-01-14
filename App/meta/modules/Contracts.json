@@ -500,19 +500,11 @@
                 "columns": [
                     {
                         "encoded": true,
-                        "field": "ContractHistoryId",
+                        "field": "ContractHistoryTime",
                         "filterable": true,
-                        "format": "",
+                        "format": "{0:g}",
                         "sortable": true,
-                        "title": "ContractHistoryId"
-                    },
-                    {
-                        "encoded": true,
-                        "field": "CustomerId",
-                        "filterable": true,
-                        "format": "",
-                        "sortable": true,
-                        "title": "CustomerId"
+                        "title": "Time"
                     },
                     {
                         "encoded": true,
@@ -520,7 +512,7 @@
                         "filterable": true,
                         "format": "",
                         "sortable": true,
-                        "title": "ContractNr"
+                        "title": "Contract Nr"
                     },
                     {
                         "encoded": true,
@@ -536,7 +528,7 @@
                         "filterable": true,
                         "format": "",
                         "sortable": true,
-                        "title": "AmountLeft"
+                        "title": "Amount Left"
                     },
                     {
                         "encoded": true,
@@ -544,15 +536,7 @@
                         "filterable": true,
                         "format": "",
                         "sortable": true,
-                        "title": "ContractStatus"
-                    },
-                    {
-                        "encoded": true,
-                        "field": "ContractId",
-                        "filterable": true,
-                        "format": "",
-                        "sortable": true,
-                        "title": "ContractId"
+                        "title": "Contract Status"
                     },
                     {
                         "encoded": true,
@@ -560,7 +544,7 @@
                         "filterable": true,
                         "format": "{0:g}",
                         "sortable": true,
-                        "title": "TimeIn"
+                        "title": "Time In"
                     },
                     {
                         "encoded": true,
@@ -568,7 +552,7 @@
                         "filterable": true,
                         "format": "{0:g}",
                         "sortable": true,
-                        "title": "TimeEnded"
+                        "title": "Time Ended"
                     },
                     {
                         "encoded": true,
@@ -576,7 +560,7 @@
                         "filterable": true,
                         "format": "",
                         "sortable": true,
-                        "title": "PaymentDate"
+                        "title": "Payment Date"
                     },
                     {
                         "encoded": true,
@@ -612,7 +596,7 @@
                     "onRowSelect": "onChildRowSelect",
                     "onRowUpdate": ""
                 },
-                "filterable": false,
+                "filterable": true,
                 "groupable": false,
                 "pageSize": 5,
                 "reorderable": false,
